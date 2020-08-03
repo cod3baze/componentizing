@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // PAGES | COMPONENTS
-import LoginModal from "../../components/LoginModal";
+import InformationModal from "../../components/InformationModal";
 // STYLES| STATIC
 import "./styles.css";
 
@@ -17,7 +17,9 @@ const Home = () => {
 
       <button onClick={handleModalControls}>Modal</button>
 
-      {modalActive && <LoginModal handleModalControls={handleModalControls} />}
+      {modalActive && (
+        <InformationModal handleModalControls={handleModalControls} />
+      )}
     </div>
   );
 };
