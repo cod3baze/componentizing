@@ -1,0 +1,93 @@
+.create-account {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  background: #d3d3d3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1px 5px 0 rgba(0, 0, 0, 0.2);
+
+  width: 330px;
+  max-height: 230px;
+
+  margin-top: 40px;
+  /* transform: translate(-50%, -50%); */
+}
+
+form#form-create {
+  width: 230px;
+  margin: 0 auto;
+}
+
+/* TOP-LEVEL */
+h3 {
+  color: #555;
+  text-align: center;
+  margin: 10px;
+}
+label {
+  color: #333;
+  display: block;
+  font-size: 12px;
+}
+input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  padding: 0 5px 0 5px;
+  margin-bottom: 7px;
+
+  margin-left: 5px;
+  font-size: 12px;
+
+  height: 25px;
+  width: 100%;
+}
+
+button#creation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 20px;
+  margin: 5px auto;
+  border: 0;
+
+  color: #f0f8f9;
+  background-color: #2c974b;
+  cursor: pointer;
+}
+button#creation:hover {
+  background-color: green;
+}
+
+/* CONTROLS */
+div#controls {
+  position: absolute;
+}
+
+button#disable {
+  border: 0;
+  top: 2px;
+  padding: 5px;
+
+  cursor: pointer;
+  color: white;
+  background: transparent;
+}
+button#disable:hover {
+  background: #999;
+  border-radius: 15px;
+}
